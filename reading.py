@@ -31,11 +31,13 @@ with open(filename, 'r') as f:
     for line in f.readlines():
         values = line.strip().split(',')
                 
-        # Kan ook in een comprehension:
+       
         d = dict(zip(headers, values))
         
         # Voeg de dict toe aan de lijst van dictionairies
         dicts.append(d)
+    
+    dicts = [dict(zip(headers, line.strip().split(','))) for line in f.readlines()]
 
 print(dicts)
 
