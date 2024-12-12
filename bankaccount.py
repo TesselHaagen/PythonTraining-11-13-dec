@@ -17,14 +17,29 @@ class BankAccount:
     
     def deposit(self, amount):
         """
+        Deposit amount of money to the balance
 
+        Args:
+        - amount (float): the amount to deposit
         """
         self.balance += amount
     
     def withdraw(self, amount):
+        """
+        Withdraws amount of money from the balance
+
+        Args:
+        - amount (float): the amount to withdraw
+        """
         self.balance -= amount
     
     def info(self):
+        """
+        Gives information about the bankaccount
+
+        Retunrs:
+        - string with info about the bankaccount
+        """
         return f'Current Balance: {self.balance} Holder: {self.holder}'
 
 
