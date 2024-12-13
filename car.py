@@ -43,7 +43,7 @@ class Car:
 
 
 
-car1 = Car('Jeep', 'Grand', 'Black')
+car1 = Car('Jeep', 'Grand', 'Black') # -> Car.__init__(Jeep)
 car2 = Car('Jeep', 'Grand', 'White')
 
-print(car1 == car2)
+print(car1 == car2) # -> Car.__eq__(car1, car2)
